@@ -1,24 +1,20 @@
-import java.util.Scanner;
+import java.util.*;
 
-class palindrome {
+public class sec9 {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter any num: ");
 
-        System.out.print("Enter a number: ");
-        int n = sc.nextInt();
-
-        int original = n;
-        int reverse = 0;
-
-        while (n != 0) {
-            int digit = n % 10;
-            reverse = reverse * 10 + digit;
-            n = n / 10;
+        int num = sc.nextInt();
+        if (num > 0) {
+            System.out.println("The num is positive: ");
         }
 
-        if (original == reverse)
-            System.out.println("Palindrome");
-        else
-            System.out.println("Not Palindrome");
+        else if (num == 0) {
+            System.out.println("The num is zero: ");
+        } else {
+            System.out.println("The num is negative: ");
+        }
     }
 }
